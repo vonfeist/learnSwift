@@ -10,19 +10,40 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        createTabBarController()
         // Do any additional setup after loading the view.
     }
     
     override func viewWillLayoutSubviews() {
         let width = self.view.frame.width
-        let navigationBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: width, height: 44))
+        let navigationBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: width, height: 60))
+        navigationBar.barTintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        let logo = UIImage(named: "logo.png");
+        let imageView = UIImageView(image: logo);
+
         self.view.addSubview(navigationBar);
-        let navigationItem = UINavigationItem(title: "Test Navigation");
-        let doneBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: #selector(selectorX))
-        navigationItem.rightBarButtonItem = doneBtn
+        self.navigationItem.titleView = imageView
         navigationBar.setItems([navigationItem], animated: false)
+        
+    }
+    
+    func createTabBarController() {
+        let tabBarCnt = UITabBarController()
+        tabBarCnt.tabBar.tintColor = UIColor.black
+        
+        let firstVc = UIViewController()
+        firstVc.title = "First"
+        firstVc.tabBarItem = UITabBarItem.init(title: "Home", image: UIImage(named: "HomeTab"), tag: 0)
+        let secondVc = UIViewController()
+        secondVc.title = "Second"
+        secondVc.tabBarItem = UITabBarItem.init(title: "Location", image: UIImage(named: "Location"), tag: 0)
+        tabBarCnt.viewControllers = [firstVc, secondVc]
+        
+        self.view.addSubview(tabBarCnt.view)
     }
     
     @objc func selectorX() {
