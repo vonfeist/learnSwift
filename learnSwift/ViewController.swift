@@ -33,15 +33,15 @@ class ViewController: UIViewController {
     
     func createTabBarController() {
         let tabBarCnt = UITabBarController()
-        tabBarCnt.tabBar.tintColor = UIColor.black
+        tabBarCnt.tabBar.tintColor = UIColor.red
         
-        let firstVc = UIViewController()
-        firstVc.title = "First"
-        firstVc.tabBarItem = UITabBarItem.init(title: "Home", image: UIImage(named: "HomeTab"), tag: 0)
+        let firstVc12 = UIViewController()
+        firstVc12.title = "First"
+        firstVc12.tabBarItem = UITabBarItem.init(title: "Home", image: UIImage(named: "HomeTab"), tag: 1)
         let secondVc = UIViewController()
         secondVc.title = "Second"
         secondVc.tabBarItem = UITabBarItem.init(title: "Location", image: UIImage(named: "Location"), tag: 0)
-        tabBarCnt.viewControllers = [firstVc, secondVc]
+        tabBarCnt.viewControllers = [secondVc, firstVc12]
         
         self.view.addSubview(tabBarCnt.view)
     }

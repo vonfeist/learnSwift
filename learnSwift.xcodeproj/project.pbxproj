@@ -14,6 +14,9 @@
 		979CD18F2297E0060008A207 /* learnSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CD18E2297E0060008A207 /* learnSwiftTests.swift */; };
 		979CD19F2297E2860008A207 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CD19E2297E2860008A207 /* Constants.swift */; };
 		979CD1B9229809B60008A207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979CD1B7229809B60008A207 /* Main.storyboard */; };
+		979CD1BB229810610008A207 /* firstVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979CD1BA229810610008A207 /* firstVc.xib */; };
+		979CD1C0229817F70008A207 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CD1BE229817F70008A207 /* SecondView.swift */; };
+		979CD1C322981FE70008A207 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979CD1C222981FE70008A207 /* SecondView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		979CD1902297E0060008A207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		979CD19E2297E2860008A207 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		979CD1B8229809B60008A207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		979CD1BA229810610008A207 /* firstVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = firstVc.xib; sourceTree = "<group>"; };
+		979CD1BE229817F70008A207 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondView.swift; path = ../Controllers/SecondView.swift; sourceTree = "<group>"; };
+		979CD1C222981FE70008A207 /* SecondView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,9 @@
 		979CD19A2297E2150008A207 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				979CD1BE229817F70008A207 /* SecondView.swift */,
+				979CD1BA229810610008A207 /* firstVc.xib */,
+				979CD1C222981FE70008A207 /* SecondView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				979CD1842297E0060008A207 /* LaunchScreen.storyboard in Resources */,
+				979CD1C322981FE70008A207 /* SecondView.xib in Resources */,
+				979CD1BB229810610008A207 /* firstVc.xib in Resources */,
 				979CD1812297E0060008A207 /* Assets.xcassets in Resources */,
 				979CD1B9229809B60008A207 /* Main.storyboard in Resources */,
 			);
@@ -242,6 +253,7 @@
 			files = (
 				979CD17C2297E0050008A207 /* ViewController.swift in Sources */,
 				979CD17A2297E0050008A207 /* AppDelegate.swift in Sources */,
+				979CD1C0229817F70008A207 /* SecondView.swift in Sources */,
 				979CD19F2297E2860008A207 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
