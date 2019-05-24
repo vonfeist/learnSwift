@@ -13,6 +13,7 @@
 		979CD1812297E0060008A207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979CD1802297E0060008A207 /* Assets.xcassets */; };
 		979CD1842297E0060008A207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979CD1822297E0060008A207 /* LaunchScreen.storyboard */; };
 		979CD18F2297E0060008A207 /* learnSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CD18E2297E0060008A207 /* learnSwiftTests.swift */; };
+		979CD19F2297E2860008A207 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CD19E2297E2860008A207 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		979CD18A2297E0060008A207 /* learnSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learnSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		979CD18E2297E0060008A207 /* learnSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learnSwiftTests.swift; sourceTree = "<group>"; };
 		979CD1902297E0060008A207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979CD19E2297E2860008A207 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,11 @@
 		979CD1782297E0050008A207 /* learnSwift */ = {
 			isa = PBXGroup;
 			children = (
+				979CD19D2297E22D0008A207 /* Helpers */,
+				979CD19C2297E2230008A207 /* Stores */,
+				979CD19B2297E21C0008A207 /* Controllers */,
+				979CD19A2297E2150008A207 /* Views */,
+				979CD1992297E2050008A207 /* Models */,
 				979CD1792297E0050008A207 /* AppDelegate.swift */,
 				979CD17B2297E0050008A207 /* ViewController.swift */,
 				979CD17D2297E0050008A207 /* Main.storyboard */,
@@ -94,6 +101,42 @@
 				979CD1902297E0060008A207 /* Info.plist */,
 			);
 			path = learnSwiftTests;
+			sourceTree = "<group>";
+		};
+		979CD1992297E2050008A207 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		979CD19A2297E2150008A207 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		979CD19B2297E21C0008A207 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		979CD19C2297E2230008A207 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		979CD19D2297E22D0008A207 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				979CD19E2297E2860008A207 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +242,7 @@
 			files = (
 				979CD17C2297E0050008A207 /* ViewController.swift in Sources */,
 				979CD17A2297E0050008A207 /* AppDelegate.swift in Sources */,
+				979CD19F2297E2860008A207 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
