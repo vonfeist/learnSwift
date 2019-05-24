@@ -14,7 +14,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewWillLayoutSubviews() {
+        let width = self.view.frame.width
+        let navigationBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: width, height: 44))
+        self.view.addSubview(navigationBar);
+        let navigationItem = UINavigationItem(title: "Test Navigation");
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: #selector(selectorX))
+        navigationItem.rightBarButtonItem = doneBtn
+        navigationBar.setItems([navigationItem], animated: false)
+    }
+    
+    @objc func selectorX() {
+        
+    }
 
 }
 
